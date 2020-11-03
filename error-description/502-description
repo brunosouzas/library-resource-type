@@ -1,0 +1,1 @@
+This status code will be returned in case the requested resource received an invalid response from the upstream server.

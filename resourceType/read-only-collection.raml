@@ -1,0 +1,84 @@
+#%RAML 1.0 ResourceType
+ 
+get:
+  displayName: <<displayName>>
+  description: Collection of <<resourcePathName | !singularize>> 
+  responses:
+    504:
+      description: !include ../error-description/504-description
+      body:
+        application/json:
+          type: <<errorType>>
+    503:
+      description: !include ../error-description/503-description
+      body:
+        application/json:
+          type: <<errorType>>
+    502:
+      description: !include ../error-description/502-description
+      body:
+        application/json:
+          type: <<errorType>>
+    500:
+      description: !include ../error-description/500-description
+      body:
+        application/json:
+          type: <<errorType>>
+    429:
+      description: !include ../error-description/429-description
+      body:
+        application/json:
+          type: <<errorType>>
+    422:
+      description: !include ../error-description/422-description
+      body:
+        application/json:
+          type: <<errorType>>
+    415:
+      description: !include ../error-description/415-description
+      body:
+        application/json:
+          type: <<errorType>>       
+    407:
+      description: !include ../error-description/407-description
+      body:
+        application/json:
+          type: <<errorType>>
+    406:
+      description: !include ../error-description/406-description
+      body:
+        application/json:
+          type: <<errorType>>
+    405:
+      description: !include ../error-description/405-description
+      body:
+        application/json:
+          type: <<errorType>>
+    404:
+      description: !include ../error-description/404-description
+      body:
+        application/json:
+          type: <<errorType>>
+    403:
+      description: !include ../error-description/403-description
+      body:
+        application/json:
+          type: <<errorType>>       
+    401:
+      description: !include ../error-description/401-description
+      body:
+        application/json:
+          type: <<errorType>>
+    400:
+      description: !include ../error-description/400-description
+      body:
+        application/json:
+          type: <<errorType>>
+    304:
+      description: !include ../error-description/304-description
+    200:
+      description: Successfully retrieved a <<resourcePathName | !singularize>>. 
+      body:
+        application/json:
+          type:  <<collectionType>>[]
+          example: <<collectionExample>>

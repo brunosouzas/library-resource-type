@@ -1,0 +1,16 @@
+#%RAML 1.0 Library
+
+usage: |
+  Use like library or import the specific file as resource-type in your project.
+
+resourceTypes:
+  create-only-item: !include resourceType/create-only-item.raml
+  crud: !include resourceType/crud.raml
+  delete-only-item: !include resourceType/delete-only-item.raml
+  partial-update-only-item: !include resourceType/partial-update-only-item.raml
+  read-only-collection-name: !include resourceType/read-only-collection-name.raml
+  read-only-collection: !include resourceType/read-only-collection.raml
+  read-only-file: !include resourceType/read-only-file.raml
+  read-only-item: !include resourceType/read-only-item.raml
+  read-only-paged-collection: !include resourceType/read-only-paged-collection.raml
+  update-only-item: !include resourceType/update-only-item.raml
